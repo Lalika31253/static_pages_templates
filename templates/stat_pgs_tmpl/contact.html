@@ -1,0 +1,17 @@
+{% extends 'stat_pgs_tmpl/base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block h1 %}Let's get in touch{% endblock %}
+{% block h2 %}Social Media{% endblock %}
+{% block p %}We will be glad to hear any feedback from you{% endblock %}
+
+{% block main %}
+<ol>
+  <li>
+    {% for media in medias %}
+      {{ media }}{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </li>
+</ol>
+{% endblock %}

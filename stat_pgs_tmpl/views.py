@@ -11,4 +11,10 @@ def home(request):
 
 
 def contact(request):
-  pass
+  ctx = {
+     'medias': ["Facebook", "LinkedIn", "Instagram", "Telegram"]
+  }
+  return render(request, 'stat_pgs_tmpl/contact.html', ctx)
+
+def about(request):
+    return render(request, 'stat_pgs_tmpl/about.html')
