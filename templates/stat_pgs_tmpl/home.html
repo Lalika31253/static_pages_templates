@@ -1,0 +1,23 @@
+{% extends 'stat_pgs_tmpl/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block h1 %}Welcome to the ComIT Course{% endblock %}
+{% block h2 %}Visit around{% endblock %}
+{% block p %}Our February 2026 - May 2026 Cohort{% endblock %}
+
+{% block main %}
+<ol>
+  <li>Name of the Course: {{ name }}</li>
+  <li>Students quantity: {{ students }}</li>
+
+  <li>
+    Students Names:
+    {% for student in names %}
+      {{ student }}{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </li>
+
+  <li>Status: {{ is_active|yesno:"Active,Inactive" }}</li>
+</ol>
+{% endblock %}
