@@ -193,13 +193,13 @@ def news(request):
 ### Rendering
 
 home
-![Home page](home.png)
+![Home page](images/home.png)
 
 contact
-![Contact](contact.png)
+![Contact](images/contact.png)
 
 about
-![About](about.png)
+![About](aimages/bout.png)
 
 news
-![News](news.png)
+![News](images/news.png)
