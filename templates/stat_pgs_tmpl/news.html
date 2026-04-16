@@ -1,0 +1,23 @@
+{% extends 'stat_pgs_tmpl/base.html' %}
+
+{% block title %}News{% endblock %}
+
+{% block h1 %}The latest ComIT news{% endblock %}
+
+{% block h2 %}
+and resources of interest
+{% endblock %}
+
+{% block p %}
+We are learning how to build web apps using Python.
+{% endblock %}
+
+{% block main %}
+<ol>
+  <li>
+    {% for i in news %}
+      {{ i }}{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </li>
+</ol>
+{% endblock %}
