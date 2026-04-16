@@ -12,21 +12,10 @@ Django template blocks and loops
 
 ## 🚀 Features
 4 pages:
-Home
-Contact
-About
-News
-Base template with reusable layout
-DaisyUI theme per page (dynamic via context)
-Use of:
-Strings
-Integers
-Booleans
-Lists
-Dictionaries
-Django template loops (for)
-Dynamic navigation bar
-
+ * Home
+ * Contact
+ * About
+ * News
 
 ## Example
 ### code
